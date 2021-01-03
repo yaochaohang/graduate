@@ -1,0 +1,46 @@
+*{margin: 0; padding: 0; font-family: "黑体";}
+body{background: url(../img/bg.jpg);}
+a{text-decoration: none; color: #000000;}
+.ssjp_body{width: 80%; height:auto; margin: 0 auto; background: #FFFFFF; padding: 20px;box-sizing: border-box;}
+.navssjp{width: 80%;height: 80px; background-color: #FFFFFF; margin: 0 auto; padding: 20px;box-sizing: border-box;}
+.list{width: 68%; height: 50px;border-bottom: #000000 solid 3px;}
+.list p,.list a{font-size: 20px; line-height: 60px;margin-left: 10px; color: #A9A9A9;}
+.list a:hover{color: orange;}
+.tj{width: 28%; height: 50px;border-bottom: #000000 solid 3px;}
+.ssjp_body .body_1{width: 70%; height: 2000px;}
+.ssjp_body .body_1 .list1{width: 100%; height: auto; padding: 20px 0; box-sizing: border-box;}
+.ssjp_body .body_1 .img{width: 280px;height: 200px;}
+.ssjp_body .body_1 .img img{width: 100%; height: 100%;}
+.ssjp_body .body_1 .con{width: 60%; height: auto; position: relative;}
+.ssjp_body .body_1 .con h2:hover{color: orange; cursor: pointer;}
+.ssjp_body .body_1 .con p{margin-top: 10px; line-height: 25px;color: #696969;}
+.ssjp_body .body_1 .con p:hover{color: #000000;cursor: pointer;text-decoration: underline;}
+.ssjp_body .body_1 .con section{position: absolute; right: 20px;bottom: 10px; color: #A9A9A9;}
+.ssjp_body .body_2{width: 30%; height: auto; border-left: #DCDCDC solid 2px; padding-left:20px;padding-top: 30px; box-sizing: border-box;}
+.ssjp_body .body_2 .list2{width: 100%; height: auto; margin-top: 20px;}
+.ssjp_body .body_2 .list2 .img{width: 40%; height: auto;}
+.ssjp_body .body_2 .list2 .img img{width: 100%; height: 100%;}
+.ssjp_body .body_2 .list2 .con{width: 58%; height: auto;line-height: 30px; color:#696969;font-size: 16px;}
+.ssjp_body .body_2 .list2 .con h3:hover{color: orange;text-decoration:underline;}
+.ssjp_body .body_2 .footer{width: 100%; height: auto;margin-top: 10px;}
+.ssjp_body .body_2 .footer .con h3,.ssjp_body .body_2 .footer .con span{font-size: 24px; font-weight: bold;}
+.ssjp_body .body_2 .footer .con span{color: red;}
+.ssjp_body .body_2 .footer .a{font-size: 22px; position: relative;width: 70px;}
+.ssjp_body .body_2 .footer .a span{font-size: 15px; color: orange; font-weight: bold;position: absolute;right: 0; top: 4px;}
+.ssjp_body
+.ssjp_body
+.ssjp_body
+.ssjp_body
+.ssjp_body
+.ssjp_body
+.ssjp_body
+.ssjp_body
+.ssjp_body
+.ssjp_body
+.ssjp_body
+.ssjp_body
+.ssjp_body
+.ssjp_body
+.ssjp_body
+.ssjp_body
+.ssjp_body

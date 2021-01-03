@@ -1,0 +1,14 @@
+ul{list-style: circle;}
+.scdp_body{width: 80%; height: auto; background-color: #FFFFFF; margin: 0 auto;}
+.scdp_body .scdp1{width: 70%; height: auto;}
+.scdp_body .scdp1 .body_1{width: 98%; height: auto; background-color:#98B880; margin: 0 auto;}
+.scdp_body .scdp1 .body1{width: 82%; height: auto; padding: 20px; box-sizing: border-box; line-height: 40px;margin: 20px auto;position: relative;}
+.scdp_body .scdp1 .body1 .sj{position: absolute; right: 50px; bottom: 0; color: #696969;}
+.scdp_body .scdp1 .body1 .img{width: 100%; height: auto;}
+.scdp_body .scdp1 .body1 img{width: 450px; height: 300px;display: inline-block;}
+.scdp_body .scdp2{width: 30%; height: auto; border-left: #696969 solid 1px;}
+.scdp_body .scdp2 ul li{line-height: 30px; font-size: 13px; color: #555555; font-family: "宋体";}
+.scdp_body .scdp1 .body_1 .body1 h2:hover{color: orange; text-decoration: underline; cursor: pointer;}
+.scdp_body .scdp1 .body_1 .body1 .blue{color: #696969;}
+.scdp_body .scdp1 .body_1 .body1 .blue:hover{color: #000000; cursor: pointer;}
+.scdp_body .scdp2 ul li:hover{color: #000000; cursor: pointer; text-decoration: underline;}

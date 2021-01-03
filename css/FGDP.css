@@ -1,0 +1,48 @@
+.fgdp_body{width: 80%; height: 800px; margin: 0 auto; background: #FFFFFF; position: relative;}
+.fgdp_body .btn{width: 100%; height: auto;}
+.fgdp_body .btn button{width: 200px; height: 50px; font-size: 24px;
+margin-left: 31px; background: #FBFBF3; border: none; outline: none;
+}
+.fgdp_body #body1{width: 95%; height: 700px; left: 30px; padding: 10px 0 ; box-sizing: border-box;
+ position: absolute; display: none;
+}
+.fgdp_body #body2{width: 95%; height: 700px; left: 30px; padding: 10px 0 ; box-sizing: border-box;
+   position: absolute; display: none;
+}
+#sec{ width: 100% ; height: 100% ; }
+#sec .sec1,#sec .sec3{width: 30% ; height: 100% ; }
+#sec .sec2{width: 38% ; height: 100% ; position: relative }
+#sec .sec2 img{ width: 100% ; height: 100% ;  }
+#sec .sec2 h3{display: block ; width: 100% ; height: 50px ; background: #000000 ;
+    opacity: 0.5; position: absolute ; bottom: 80px ; text-align: center ; line-height: 50px ; color: #FFFFFF ;
+    font-size: 24px;
+}
+#navBtn{width: auto ; height: auto ; position: absolute ; bottom: 20px ; left: 50px}
+#navBtn a{display: block ; width: 40px ; height: 40px ; background: #000000 ;
+    opacity: 0.5; float: left ; margin: 0 10px}
+#list1{ list-style-type: none; line-height: 30px; }
+#list1 li{ font-size: 19px ; font-weight: bold ; margin: 36px 0;  }
+#list1 li:hover{ color: aqua ; cursor:pointer ; }
+#hh1,#hh2{width: 100% ; height: 50% ; }
+#hh1{  padding: 20px; box-sizing: border-box ; }
+#hh1 .hh1_1{ width: 48% ; height: 100% ;}
+#hh1 .hh1_1 img{ width: 100% ; height: 100% ;  }
+#hh1 .hh1_2{ width: 50% ; height: 100% ; }
+#hh1 .hh1_2 h2{ font-size: 23px ; margin-top: 20px ; }
+#hh1 .hh1_2 p{ text-indent: 25px ; line-height: 30px ; margin-top: 40px; font-size: 20px }
+#hh2 .hh1_1,#hh2 .hh2_2{ width: 50% ; height: 100% ; }
+#hh2 .hh1_1 .section1,#hh2 .hh1_1 .section2{ width: 100% ; height: 50% ; }
+#hh2 .hh1_1 .section1{  align-items: center ; }
+#hh2 .hh1_1 .section1 img{ width: 26% ; height: 80%;}
+#hh2 .hh1_1 .section2{ padding: 5px 20px ; box-sizing: border-box }
+#hh2 .hh1_1 .section2 p{ text-indent: 25px ; font-size: 16px ; line-height: 30px ; }
+#hh2 .hh2_2 .hh2_2_1{ width: 51% ; height: 100% ; padding: 20px 10px ; box-sizing: border-box }
+#hh2 .hh2_2 .hh2_2_1 h2{ font-size: 24px ; }
+#hh2 .hh2_2 .hh2_2_1 p{ text-indent: 25px ; line-height: 25px ; margin-top: 10px }
+#hh2 .hh2_2 .hh2_2_2{ width: 49% ; height: 100% ; padding: 10px 10px ; box-sizing: border-box }
+#hh2 .hh2_2 .hh2_2_2 img{ width: 100% ; height: 100% ; }
+#hh1 .hh1_2 h2:hover{color: blue; cursor:pointer; text-decoration: underline}
+#hh1 .hh1_2 p:hover{color: aqua;cursor:pointer;}
+#hh2 .hh1_1 .section2 p:hover{color: aqua;cursor:pointer;}
+#hh2 .hh2_2 .hh2_2_1 h2:hover{color: blue;cursor:pointer;text-decoration: underline}
+#hh2 .hh2_2 .hh2_2_1 p:hover{color: aqua;cursor:pointer;}

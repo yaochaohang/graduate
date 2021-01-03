@@ -1,0 +1,4 @@
+.ssjp_body{width: 80%; height: auto; margin: 0 auto; padding: 10px; box-sizing: border-box; flex-wrap: wrap; }
+.ssjp_body figure img{width: 400px; height: 300px; margin: 20px; border: #696969 solid 5px;}
+.ssjp_body figure figcaption{width: 300px; height: auto; text-align: center;margin: 0 auto;}
+.ssjp_body figure figcaption h3:hover{transition: 0.5s; color: orange; cursor: pointer;}
