@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>服装搭配-首页</title>
+		<link rel="stylesheet" href="css/style.css">
+		<style>
+			#off:hover{color: red}
+			#btn{background: #98B880 ;}
+			#btn:hover{background: #CCCCCC}
+		</style>
+		<script>
+			window.onload = function (){
+			
+				var imgs = document.querySelector('#imgs')
+				var navBtn = document.querySelectorAll('.aa a')
+				var imgsArr = ["img/lunbo1.jpg","img/lunbo2.jpg","img/lunbo3.jpg","img/lunbo4.jpg"]
+				navBtn[0].style.background = "orange"
+				for( var i=0 ; i<imgsArr.length ; i++){
+					navBtn[i].num = i
+					navBtn[i].onclick = function (){
+						navnull()
+						index = this.num
+						this.style.background = "orange"
+						imgs.src = imgsArr[index]
+					}
+				}
+				function navnull (){
+					for( var j=0 ; j<imgsArr.length ; j++){
+						navBtn[j].style.background = ""
+					}
+				}
+				var time = 0
+				setInterval(function (){
+					navnull()
+					if( time>=imgsArr.length-1){
+						time = 0
+						navBtn[time].style.background = "orange"
+						imgs.src = imgsArr[time]
+					}else{
+						time++
+						navBtn[time].style.background = "orange"
+						imgs.src = imgsArr[time]
+					}
+				},1600)
+
+				var ii = document.querySelector('#index')
+				var off = document.querySelector('#off')
+				var btn = document.querySelector('#btn')
+				off.onclick = function () {
+					window.close()
+				}
+
+				var imgss = document.querySelector('#con_1_1 img')
+				var img1 = ["img/index1.png","img/index2.png"]
+				var imgtime = 0
+				setInterval(function(){
+					if(imgtime >=img1.length-1){
+						imgtime = 0
+						imgss.src=img1[imgtime]
+					}else{
+						imgtime++
+						imgss.src=img1[imgtime]
+					}
+				},1500)
+
+				var timer = 6
+				var btnset = setInterval(function(){
+					if(timer == 1){
+						btn.disabled=""
+						clearInterval(btnset)
+						btn.innerHTML = "成为这条gai最靓的人"
+						btn.style.color=""
+					}else{
+						timer--
+						btn.innerHTML = timer
+						btn.style.color="red"
+					}
+				},1000)
+
+				btn.onclick=function(){
+					ii.style.display="none"
+				}
+
+
+			}
+		
+
+		</script>
+	</head>
+	<body>
+	<div id="index" style="width: 100% ; height: 100% ;
+	 background: rgb(0,0,0,0.5) ; position: fixed ;
+	 top: 0 ; z-index: 9999 ; " class="flexcen">
+
+		<div id="cen" style="width: 600px ; height: 600px ; background: rgba(255,255,255,0.9) ;
+			border-radius: 20px;
+		">
+			<h2 style="width: 100% ; height: 80px ; text-align: center ; line-height: 80px ;
+				font-size: 38px; font-family: 黑体; position: relative;
+			">欢迎来到服装搭配.com<span id="off" style="font-size: 24px ; font-weight: bold ; position: absolute ;margin: 0; padding: 0;
+				top: -15px;right: 10px; font-family: 'Adobe Garamond Pro'; font-weight: 100; cursor: pointer;
+			" >关闭</span></h2>
+			<marquee style="font-size: 24px ; margin-top: 10px">欢迎您来到服装搭配网站，在这里您可以看到现如今的服装流行趋势、学习到一些服装颜色搭配、风格搭配等内容......</marquee>
+			<div id="con" class="flexcen" style="width: 100% ; height: 350px ; ">
+				<div id="con_1" class="flexb" style="width: 500px ; height: 320px ; ">
+					<div id="con_1_1" style="width: 50% ; height: 100% ;">
+						<img src="img/index1.png" alt="" style="width: 100% ; height: 100% ; border-radius: 5px">
+					</div>
+					<div id="hh" style="width: 49% ; height: 100px ;">
+						<h2 style="font-size: 18px ; padding: 10px">如何在10天内成为这条gia最靓的崽？</h2>
+						<p style="font-size: 12px ; line-height: 40px ; padding: 3px 20px">『浓墨重彩的风格，才最适合被铭记<br />
+							不是自恃清高 只是讨厌所有无趣的搭配<br />
+							专注各种出挑的亮色、前卫的印花和有趣的廓形<br />
+							去抨击所有的乏味和枯燥』</p>
+					</div>
+				</div>
+			</div>
+			<div id="btn111" style="width: 100% ; height: auto ; margin-top: 16px;" class="flexcen">
+				<button id="btn" type="button" style="width: 260px ; height: 60px ;  border: #CCCCCC solid 2px ;
+					font-size: 24px ; border-radius: 15px; cursor:pointer ; font-family: 华文楷体; text-align: center;
+				" disabled="disabled" ></button>
+			</div>
+		</div>
+
+
+	</div>
+		<header>
+			<div class="logo flex">
+				<img src="./img/logo.jpg" alt="" >
+			</div>
+			<div class="search flexcen">
+				<form action="" class="flex">
+					<input type="text" placeholder="请输入要搜索的内容">
+				&nbsp;<button>搜 索</button>
+				</form>
+			</div>
+		</header>
+		<nav class="flexc">
+			<div class="nav">
+				<ul class="flexb" id="list">
+					<li><a href="index.html" style="background: #CCCCCC; color: #555555;">首页</a></li>
+					<li><a href="NNDP.html">男士搭配</a></li>
+					<li><a href="NSDP.html">女士搭配</a></li>
+					<li><a href="SCDP.html">色彩搭配</a></li>
+					<li><a href="FGDP.html">风格搭配</a></li>
+					<li><a href="SSJP.html">时尚街拍</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="body">
+			
+			<div class="banner flexa">
+				<div class="img">
+					<ul id="lun flex">
+						<li><img src="img/lunbo1.jpg" alt="" id="imgs"></li>
+<!--						<li><img src="img/lunbo2.jpg" alt=""></li>-->
+<!--						<li><img src="img/lunbo1.jpg" alt=""></li>-->
+<!--						<li><img src="img/lunbo2.jpg" alt=""></li>-->
+					</ul>
+				</div>
+				<div class="aa flex">
+					<a href="javascript:;"></a>
+					<a href="javascript:;"></a>
+					<a href="javascript:;"></a>
+					<a href="javascript:;"></a>
+				</div>
+				<div class="side">
+					<figure>
+						<img src="img/-1.jpg" alt="">
+						<figcaption>要穿好衣品，首先要了解自己适合什么，比如你的身材如何？是矮个子、高个子？矮个子如何显高？你是什么身材？这样才能找到自己的穿衣风格</figcaption>
+					</figure>
+					<figure>
+						<img src="img/-2.jpg" alt="">
+						<figcaption>国内首个时装共享衣服，很多明星在用，可以参考明星穿搭，解决“衣橱里总少一件衣服”的难题，随时随地试出自己想要的穿衣风格。</figcaption>
+					</figure>
+					<figure>
+						<img src="img/-3.jpg" alt="">
+						<figcaption>国外潮人街拍的网站，会分享各自的服装搭配心得，有多种风格：时髦风、波西米亚风、复古风、奇幻风、休闲风等，基本上能找到你想要的风格，包容性强。</figcaption>
+					</figure>
+				</div>	
+			</div>
+			
+			<div class="partition">
+				<img src="img/FGDP.jpg" alt="">
+				<p><a href="">MORE&nbsp;<span>--&gt;</span></a></p>
+			</div>
+			
+		<div class="page_body_1">
+			<figure>
+				<img src="img/FG.jpg" alt="">
+				<figcaption><h2>复古风</h2><br/><span>今年大热的复古风来袭，可甜美可优雅可文艺，自带迷人滤镜。</span></figcaption>
+			</figure>
+			<figure>
+				<img src="img/FS.jpg" alt="">
+				<figcaption><h2>法式慵懒风</h2><br/><span>举手投足之间尽是随性及慵懒，不刻意却不失精致感，自带柔光的高级感扑面而来。</span></figcaption>
+			</figure>
+			<figure>
+				<img src="img/HX.jpg" alt="">
+				<figcaption><h2>韩系简约风</h2><br/><span>注重设计感及剪裁，追求简约气质和低调的少女日常，单品搭配率更高。</span></figcaption>
+			</figure>
+			<figure>
+				<img src="img/RX.jpg" alt="">
+				<figcaption><h2>日系休闲风</h2><br/><span>简单清爽的穿搭风格，不管是颜色还是材质都以舒适休闲为主，没有过于贴身的版型或者反复的设计。</span></figcaption>
+			</figure>
+		</div>
+		
+		<div class="partition">
+			<img src="img/NVSDP.jpg" alt="">
+			<p><a href="">MORE&nbsp;<span>--&gt;</span></a></p>
+		</div>
+		
+		<div class="page_body_2 flexa">
+			<div class="jt">
+				<figure>
+					<img src="img/JT.jpg" alt="">
+					<figcaption><h2>宝藏女孩清新脱俗，甜美如你</h2><br /><span>这套裙子真的太温柔了，名字也挺好听“小杏运”穿上去就是秋冬里捧在手上温暖的奶茶！温温柔柔又甜甜的，有点俏皮的少女感~</span></figcaption>
+				</figure>
+				
+			</div>
+			<div class="-jt">
+				<div class="-jt-1 flexa">
+					<figure>
+						<img src="img/nv1.jpg" alt="">
+						<figcaption>用飘逸感裙子打造自然随性之美，搭配设计感，收身超显瘦，自带女孩气质感~</figcaption>
+					</figure>
+					<figure>
+						<img src="img/nv2.jpg" alt="">
+						<figcaption>叠穿了风衣和呢大衣，比较偏向休闲风格，所以穿了衬衫和球鞋。灰色、卡其色、黑色和这里都很搭哦~</figcaption>
+					</figure>
+					<figure>
+						<img src="img/nv3.jpg" alt="">
+						<figcaption>夏日穿搭，选择深浅搭配的穿搭，例如白色纯色上衣加上灰色甩裤腿，分分钟拉长腿的效果</figcaption>
+					</figure>
+				</div>
+				<div class="-jt-2 flexa">
+					<figure>
+						<img src="img/nv4.jpg" alt="">
+						<figcaption>穿的是Hollister的这条小黑裙，V领可以让锁骨看起来更有型，还有裙摆开叉的设计让整个的比例更好的呈现，毕竟显瘦才是王道！</figcaption>
+					</figure>
+					<figure>
+						<img src="img/nv6.jpg" alt="">
+						<figcaption>叠加了一个白色马甲，马甲配格裙那也是经典中的经典啦！叠加马甲之后会显得整体风格更加学院风哦！</figcaption>
+					</figure>
+					<figure>
+						<img src="img/nv5.jpg" alt="">
+						<figcaption>生活不止有工作的忙碌，还有周末的自在，换身休闲的装备，休息一下吧。</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+		
+		<div class="partition">
+			<img src="img/NSDP.jpg" alt="">
+			<p><a href="">MORE&nbsp;<span>--&gt;</span></a></p>
+		</div>
+		<div class="page_body_3">
+			<figure>
+				<img src="img/N1.png" alt="">
+				<figcaption>推荐大家内搭一件白T恤，下摆露出来一点会更有层次感。鞋子和衣服在色系上小呼应，整套穿搭还是以简约为主</figcaption>
+			</figure>
+			<figure>
+				<img src="img/N2.png" alt="">
+				<figcaption>墨绿色超级正，做内搭或者不冷的时候单穿加上内搭T恤都很不错，这种宽松的工装裤穿秋裤都不会显得腿粗，秋冬搭配起来还是很好看的</figcaption>
+			</figure>
+			<figure>
+				<img src="img/N3.png" alt="">
+				<figcaption>选择适合自己身材和风格的工装靴。工装靴有分高、中、低帮、鞋面也有皮面和绒棉的区别。比如马臀皮的工装靴可以搭偏商务的正装，大黄靴和阔腿的牛仔裤也可以穿出不一样的风格</figcaption>
+			</figure>
+			<figure>
+				<img src="img/N4.png" alt="">
+				<figcaption>上衣简约基本款条纹衬衫系小马甲，配工装夹克。下装选择直筒蓝色工装牛仔裤。鞋子可以选择经典百搭款Vans鞋或者Converse</figcaption>
+			</figure>
+		</div>
+		
+		<div class="partition">
+			<img src="img/SCDP.jpg" alt="">
+			<p><a href="">MORE&nbsp;<span>--&gt;</span></a></p>
+		</div>
+		
+		<div class="page_body_4">
+			<div class="body_1">
+				<section class="img">
+					<img src="img/一分钟SCDP.jpg" alt="">
+				</section>
+				<section class="con">
+					<ul>
+						<li><h3>1、凉单色搭配(monochromatic)</h3><br />这个很简单，就是只用- -种颜色的搭配。色彩的变化只在同一个色相中完成，在不改变色相的情况下进行明度和纯度的改变，给人以简洁、有条理的感觉。但相对单调、刻板，缺乏活跃的情趣。</li>
+						<li><h3>2、凉同类色搭配(analogous colors)</h3><br />色环.上夹角为60度的三个相邻的色相称为同类色，将它们搭配在-起会很和谐。</li>
+						<li><h3>3、凉补色搭配(complementary colors)</h3><br />色环_上相对的两种颜色，被称为互补色。放在一起，会形成对比效果。比如蓝色和橙色、红色和绿色、黄色和紫色等。</li>
+						<li><h3>4、凉分散互补色搭配(split-complementary colors)</h3><br />寻找三种颜色，其中两种互相类似，另一种与它们形成对比，这就是分散互补色搭配。分散互补色搭配是初学</li>
+					</ul>
+				</section>
+			</div>
+			<div class="body_2">
+				<section class="con1">
+					<h2>最全干货!万能穿搭技巧|快速提升衣品+穿搭攻略，从选风格到学习，到技巧，到购物，通通都有，赶快学习收藏起来吧</h2>
+				</section>
+				<section class="con2">
+					<ul>
+						<li>
+							<ul><h3>第一步:找到适合自己的风格,了解有哪几种穿搭风格</h3>
+								<ul>
+									<li>①韩系甜美风</li>
+									<li>②日杂简约风</li>
+									<li>③职场OL风</li>
+									<li>④文艺复古风</li>
+									<li>⑤运动休闲风</li>
+									<li>⑥欧美街拍风</li>
+								</ul>
+							</ul>
+						</li>
+						<li>
+							<h3>第二步:多学习，有输入才有输出</h3>
+							<ul>
+								<li>1、 学色彩搭配</li>
+								<li>2、各大平台的穿搭博主或同身型的明星</li>
+								<li>3、学会扬长避短</li>
+							</ul>
+						</li>
+						<li>
+							<h3>第三步:实践+调整=适合自己</h3>
+							<ul>
+								<li>1、实体店试衣间可以去店里找到之前保存图片的类似款式，像zara</li>
+								<li>2、网上购买如果没有这类实体店或者不想出门，也可以在网上购买同款，到货试穿后不合适的话退货就行，注意购买时最好选有运险费的</li>
+								<li>3、app试衣再推荐-款真人试衣app一好搭， 可以根据你的照片生成虚拟模特，可以看到试衣效果</li>
+							</ul>
+						</li>						
+					</ul>
+				</section>
+			</div>
+			<div class="body_3">
+				<section class="img">
+					<img src="img/DY2.jpg" alt=""><img src="img/DY1.jpg" alt="">
+				</section>
+				<section class="con">
+					<ul>
+						<li><span>小妇人</span> 8.1分<br />分两个年代的版本，2019 年版的一定要看，演员阵容强大，画面非常美~整个电影就像是--幅动态的油画，每一帧截图都超美。</li>
+						<li><span>布鲁克林</span> 7.9分<br />讲述了乡村女孩的蜕变史，整个电影的配色很复古，墨绿色、暗红色、海蓝色...服饰也都是复古款的。喜欢复古穿搭的女生值得一-看~</li>
+						<li><span>曾赎罪</span> 8.4分<br />女主的墨绿色长裙超级美，超级显白，偏法式穿搭风。电影画面美到哭泣，剧情也特别饱满，讲述的一个爱情故事。</li>
+						<li><span>曾布达佩斯大饭店</span> 8.8分<br />韦思.安德森导演的代表作，整个电影充满了可爱的糖果色，构图很有特点，喜欢拍照的女生可以多看看。</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+		
+		<div class="partition">
+			<img src="img/SSJP.jpg" alt="">
+			<p><a href="">MORE&nbsp;<span>--&gt</span></a></p>
+		</div>
+		
+		<div class="page_body_5">
+			<div class="body_1 flex">
+				<div class="section1 flexe">
+					<img src="img/f1.png" alt="">
+					<img src="img/f2.png" alt="">
+				</div>
+				<div class="section2 flexe">
+					<img src="img/f3.png" alt=""><img src="img/f4.png" alt="">
+				</div>
+			</div>
+			<div class="body_2 flex">
+				<div class="section1 flexe">
+					<img src="img/f5.png" alt="">
+					<img src="img/f6.png" alt="">
+				</div>
+				<div class="section2 flexe">
+					<img src="img/f7.png" alt="">
+					<img src="img/f8.png" alt="">
+				</div>
+			</div>
+		</div>
+		</div>
+		<footer class="flexcen">
+			<ul>
+				<li>服装搭配（www.fuzhuangdapei.com），有态度的时尚媒体！</li>
+				<li>盘点明星街拍、服装搭配技巧、最新流行趋势，与你共享无国界最IN时尚穿搭！</li>
+				<li>Copyright @ 2020-2021 服装搭配（www.fuzhuangdapei.com） All rights reserved 豫ICP备15000569号</li>
+			</ul>
+		</footer>
+
+
+		
+		
+	</body>
+</html>
